@@ -1,0 +1,505 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(to right,#00b6ff, #8188f0);
+}
+nav, aside, footer{
+    box-shadow: 1px 5px 5px black;
+    margin: auto;
+}
+/*Página de Inicio*/
+nav{
+    background: linear-gradient(#00feff, #004147, #00abae);
+    height: 100px;
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+}
+.A{
+    background: -webkit-linear-gradient(120deg, hsl(004219, 94%, 61%), hsl(504900, 69%, 51%));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+h1{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 40px;
+    color: white;
+    text-shadow: -1px -1px 0 #a200ff, 1px -1px 0 #a200ff,-1px 1px 0 #00d5ff, 1px 1px 0 #00d5ff;
+}
+.Ul{
+    font-size: 20px;
+    padding: 10px 10px;
+}
+.Li{
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 5px;
+}
+.Li::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: #8188f0;
+}
+.Li:hover{
+    color: white;
+}
+.Li:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+aside{
+    background: linear-gradient(#00feff, #004147, #00abae);
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+.boxd{
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.boxi{
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.video{
+    display: flex;
+    width: 90%;
+    height: 90%;
+}
+.btn{
+    margin-top: 20px;
+    width: 150px;
+}
+.lab{
+    font-size: 35px;
+    text-shadow: -1px -1px 0 #a200ff, 1px -1px 0 #a200ff,-1px 1px 0 #00d5ff, 1px 1px 0 #00d5ff;
+}
+.img{
+    display: flex;
+    width: 150%;
+    height: 100%;
+}
+button{
+    background: linear-gradient(to left, #00feff, #ff9dfe, #aec4ff);
+    color: #748fe7;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+button:hover{
+    color: white;
+    background: linear-gradient(to right, #aec4ff, #44f8e0, #748fe7);
+}
+footer{
+    background: linear-gradient(#00feff, #004147, #00abae);
+    width: 90%;
+    height: 100px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+footer .red_sociales{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .red_sociales li{
+    list-style: none;
+}
+footer .red_sociales li a{
+    display: inline-block;
+    transition: 0.5s;
+    font-size: 2em;
+    padding: 5px 10px;
+}
+footer .red_sociales li a:hover{
+    transform:translateY(-10px);
+}
+/*Página de Contacto*/
+.contai{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.teiner{
+    width: 40%;
+    height: 800px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+.list{
+    background: linear-gradient(#00feff, #004147, #00abae);
+    margin: 5px;
+    flex: 1 1 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    width: 40%;
+    height: 800px;
+    margin: 5px;
+    flex: 1 1 auto;
+    border-radius: 10px;
+    display: flex;
+}
+.Form{
+    background: linear-gradient(#00feff, #004147, #00abae);
+    margin: 5px;
+    flex: 1 1 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cen{
+    width: 90%;
+    height: 400px;
+    margin: 5px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+.H2{
+    text-shadow: -1px -1px 0 #a200ff, 1px -1px 0 #a200ff,-1px 1px 0 #00d5ff, 1px 1px 0 #00d5ff;
+    margin-top: 20px;
+    background-color: #006471;
+    padding: 10px;
+    width: auto;
+    height: 60px;
+    border-radius: 60px 0px 60px;
+    text-align: center;
+}
+.wraper{
+    width: 500px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(to left, #00b6ff,  #8188f0, #b152b1, #b70f61);
+    border: 1px solid rgb(255, 255, 255, 0.20);
+    backdrop-filter: blur(45px);
+    margin: 20px;
+}
+.mensaje {
+    text-align: left;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: transparent;
+}
+/*Página de Quiénes somos*/
+.Main{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.teiner2{
+    width: 40%;
+    height: 1000px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+.empresa{
+    background: linear-gradient(#00feff, #004147, #00abae);
+    margin: 5px;
+    padding: 7px;
+    flex: 1 1 auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.MV{
+    height: 250px;
+    margin: 5px;
+    padding: 7px;
+    flex: 1 1 auto;
+    border-radius: 10px;
+}
+.empre{
+    margin: 5px;
+    padding: 7px;
+    flex: 1 1 auto;
+    border-radius: 10px;
+}
+.empre li{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+h3{
+    text-align: center;
+    text-shadow: -1px -1px 0 #a200ff, 1px -1px 0 #a200ff,-1px 1px 0 #00d5ff, 1px 1px 0 #00d5ff;
+}
+.empre .empresa, p{
+    color: white;
+}
+.Section{
+    width: 40%;
+    background: linear-gradient(#00feff, #004147, #00abae);
+    height: 990px;
+    margin: 10px;
+    flex: 1 1 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.centro{
+    width: 90%;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    background: linear-gradient(#00feff, #004147, #00abae);
+    flex: 1 1 auto;
+}
+.nuestros{
+    height: 400px;
+    flex: 1 1 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nuestros table, h2{
+    width: 90%;
+    margin-top: -10px;
+}
+tr, td, th{
+    font-family: sans-serif;
+    border: 3px solid;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    width: 90%;
+    height: 100px;
+}
+th{
+    background-color: #8188f0;
+    padding: 5px;
+}
+td{ 
+    padding: 5px;
+    background: linear-gradient(to left, #00b6ff,  #8188f0, #b152b1, #b70f61);
+}
+.IMG{
+    width: 40%;
+    height: 90px;
+}
+.h2{
+    background-color: #006471;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 25px;
+    height: 40px;
+    border-radius: 60px 0px 60px;
+    text-align: center;
+}
+/*Página de Registro*/
+.body{
+    background: linear-gradient(#00cacb , #00686c, #00979a);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 110vh;
+    width: 90%;
+    padding: 0 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.wrapper{
+    width: 400px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(to right, #00b6ff,  #8188f0, #b152b1, #b70f61);
+    border: 1px solid rgb(255, 255, 255, 0.5);
+}
+.wrapper a{
+    color: white;
+    text-decoration: none;
+}
+.wrapper a:hover{
+    text-decoration: underline;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: -1px -1px 0 #a200ff, 1px -1px 0 #a200ff,-1px 1px 0 #00d5ff, 1px 1px 0 #00d5ff;
+}
+.input-field{
+    position: relative;
+    border-bottom: 2px solid rgb(255, 255, 255, 0.3);
+    margin: 20px 0;
+}
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+.input-field input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #ff2d78;
+    padding: 0 10px;
+}
+.input-field input:focus~label,
+.input-field input:valid~label{
+    font-size: 0.9rem;
+    top: 10px;
+    transform: translateY(-150%);
+}
+.forget{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+    color: #ffffff;
+}
+#terms{
+    accent-color: #c000ff;
+}
+.forget label{
+    display: flex;
+    align-items: center;
+}
+.forget label p{
+    margin-left: 8px;
+}
+.Input{
+    background-color: #004147;
+    height: 40px;
+    color: white;
+}
+.register{
+    text-align: center;
+    margin-top: 30px;
+    color: #ffffff;
+}
+/*Página de Blog*/
+.container{
+    width: 1100px;
+    height: 1000px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    background: linear-gradient(#00cacb , #00686c, #00979a);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.container img{
+    display: block;
+    border-radius: 5px;
+}
+.items{
+    border-radius: 10px;
+    width: 950px;
+    height: 400px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+}
+.par p{
+    margin-top: 10px;
+    width: 550px;
+}
+.Btn{
+    background: linear-gradient(white, aqua);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    margin-top: 10px;
+    width: 200px;
+}
+.Btn:hover{
+    background: linear-gradient(aqua,violet);
+    transform: scale(1.1, 1.1);
+}
